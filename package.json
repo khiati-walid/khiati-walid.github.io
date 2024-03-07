@@ -1,0 +1,20 @@
+{
+  "name": "walid-khiati-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw-watch": "postcss src/styles/index.css -o assets/styles/index.css --watch --verbose",
+    "tw-build": "postcss src/styles/index.css -o assets/styles/index.css",
+    "tw-prod": "NODE_ENV=production tailwindcss -i src/styles/index.css -o assets/styles/index.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
+  }
+}

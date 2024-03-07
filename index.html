@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <meta
+      name="description"
+      content="Explore the professional portfolio of Walid Khiati, showcasing a diverse range of projects and accomplishments"
+    />
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <script src="assets/scripts/script.js" defer></script>
+    <title>Portfolio - Walid Khiati</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="bg-bgPrimary fixed inset-x-0 top-0 z-20">
+        <div class="wrapper z-20 flex h-20 items-center justify-between">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="/">
+              <img
+                src="./assets/images/logo.png"
+                alt="Walid Khiati logo"
+                class="block w-10"
+              />
+            </a>
+          </h1>
+          <!-- Navbar links -->
+          <ul
+            class="nav-menu shadow-navbar bg-bgPrimary fixed -right-[100vw] top-[4.5rem] flex w-[calc(80%-10px)] flex-col items-start rounded-md p-8 font-medium duration-300 sm:static sm:w-auto sm:flex-row sm:items-center sm:rounded-none sm:p-0 sm:shadow-none sm:duration-0"
+          >
+            <li class="mb-2 sm:mb-0">
+              <a
+                class="nav-link text-sm sm:mx-4 sm:text-[0.8rem]"
+                href="#projects"
+                >PROJECTS</a
+              >
+            </li>
+            <li class="mb-2 sm:mb-0">
+              <a
+                class="nav-link text-sm sm:mx-4 sm:text-[0.8rem]"
+                href="#contact"
+                >CONTACT</a
+              >
+            </li>
+            <li class="mb-2 sm:mb-0">
+              <a class="nav-link text-sm sm:mx-4 sm:text-[0.8rem]" href="/"
+                >BlOG</a
+              >
+            </li>
+            <li class="mb-2 w-full sm:mb-0 sm:w-auto">
+              <a
+                class="bg-primary nav-link hover:bg-secondary mt-2 flex w-full items-center justify-center gap-2 rounded-[1.875rem] px-8 py-3 text-[0.8rem] text-sm text-black duration-300 sm:mx-4 sm:mt-0 sm:w-auto sm:justify-normal"
+                href="./assets/CV_khiati_walid.pdf"
+                target="_blank"
+              >
+                <span>RESUME</span>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    height="16"
+                    width="16"
+                    stroke-width="3.5"
+                    stroke="currentColor"
+                  >
+                    <title>right arrow svg</title>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <div class="theme-switch">
+              <input id="switch" type="checkbox" class="hidden" />
+              <label
+                class="toggle-icons flex cursor-pointer items-center justify-between"
+                for="switch"
+              >
+                <img
+                  src="./assets/images/svg/moon.svg"
+                  width="30"
+                  class="moon ease-themeToggle w-7 rotate-[10deg] duration-700"
+                />
+                <img
+                  src="./assets/images/svg/sun.svg"
+                  width="30"
+                  class="sun ease-themeToggle w-7 duration-700"
+                />
+              </label>
+            </div>
+          </ul>
+          <div class="hamburger mb-[0.1rem] px-2 py-1 sm:hidden sm:p-0">
+            <span
+              class="bar bg-bgSecondary my-1 block h-[0.1875rem] w-[1.4375rem] rounded-[1.875rem] transition duration-300"
+            >
+            </span>
+            <span
+              class="bar bg-bgSecondary my-1 block h-[0.1875rem] w-[1.4375rem] rounded-[1.875rem] transition duration-300"
+            >
+            </span>
+            <span
+              class="bar bg-bgSecondary my-1 block h-[0.1875rem] w-[1.4375rem] rounded-[1.875rem] transition duration-300"
+            >
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="min-h-[40vh] transition duration-300">
+        <div class="wrapper mt-40 md:mt-60">
+          <div class="my-6 text-center md:text-left">
+            <h1 class="mb-4 text-5xl font-bold">Hi, I'm Walid</h1>
+            <p class="mx-auto max-w-3xl font-light md:mx-0">
+              Coding visionary and project leader, adept at navigating complex
+              tech terrains. Passionate about driving teams towards excellence
+              and innovation. Embrace the challenge, lead the change.
+            </p>
+          </div>
+          <ul class="mt-10 flex justify-center gap-4 md:justify-normal">
+            <li>
+              <a
+                href="mailto:career.walidkhiati@gmail.com"
+                target="_blank"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+              >
+                <img
+                  src="./assets/images/svg/mail-icon.svg"
+                  alt="Gmail"
+                  width="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/Rairon7"
+                target="_blank"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+              >
+                <img
+                  src="./assets/images/svg/telegram-icon.svg"
+                  alt="Telegram"
+                  width="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/_rairon"
+                target="_blank"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+              >
+                <img
+                  src="./assets/images/svg/twitter-icon.svg"
+                  alt="Twitter"
+                  width="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/khiati-walid/"
+                target="_blank"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+              >
+                <img
+                  src="./assets/images/svg/linkedin-icon.svg"
+                  alt="Linkedin"
+                  width="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/khiati-walid"
+                target="_blank"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+              >
+                <img
+                  src="./assets/images/svg/github-icon.svg"
+                  alt="GitHub"
+                  width="20"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr
+        class="border-cardBackground mx-4 my-24 border sm:max-w-[68.75rem] sm:mx-auto"
+      />
+      <!-- Projects -->
+      <section id="projects">
+        <div class="wrapper pb-40">
+          <div>
+            <h2
+              class="mb-4 text-[2.5rem] font-semibold leading-tight transition sm:text-5xl"
+            >
+              Projects
+            </h2>
+            <p class="font-light">Check out some of my personal projects.</p>
+          </div>
+
+          <article
+            class="project mt-6 grid auto-rows-[minmax(250px,auto)] grid-cols-1 gap-[0.9rem] md:grid-cols-2 lg:grid-cols-3"
+          >
+            <!-- Project 1 -->
+            <div
+              href=""
+              class="card text-white hover:shadow-projectCard group rounded-md bg-[url('../images/project/project-one.png')] bg-cover bg-center p-4 duration-[0.4s] ease-in-out"
+            >
+              <div
+                class="project-info flex items-center justify-between opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+              >
+                <div class="project-bio relative left-2.5 top-40">
+                  <h3 class="text-[0.9rem]">
+                    Time Series Forecasting ARIMA-RNN
+                  </h3>
+                  <p class="text-[0.83rem] font-light">
+                    Django, React, Deep Learning
+                  </p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://github.com/khiati-walid/Time-series-forecasting-ARIMA-RNN"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/svg/github-icon.svg"
+                      alt="github logo"
+                      width="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div
+              class="card text-white hover:shadow-projectCard group rounded-md bg-[url('../images/project/project-two.png')] bg-cover bg-center p-4 duration-[0.4s] ease-in-out"
+            >
+              <div
+                class="project-info flex items-center justify-between opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+              >
+                <div class="project-bio relative left-2.5 top-40">
+                  <h3 class="text-[0.9rem]">Watch Store</h3>
+                  <p class="text-[0.83rem] font-light">React</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://github.com/khiati-walid/Watch-Store"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/svg/github-icon.svg"
+                      alt="github logo"
+                      width="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Porject 3 -->
+            <div
+              href=""
+              class="card text-white hover:shadow-projectCard group rounded-md bg-[url('../images/project/project-three.png')] bg-cover bg-center p-4 duration-[0.4s] ease-in-out"
+            >
+              <div
+                class="project-info flex items-center justify-between opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+              >
+                <div class="project-bio relative left-2.5 top-40">
+                  <h3 class="text-[0.9rem]">Django-React E-commerce</h3>
+                  <p class="text-[0.83rem] font-light">Django, React</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://github.com/khiati-walid/Django-React-E-commerce"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/svg/github-icon.svg"
+                      alt="github logo"
+                      width="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div
+              href=""
+              class="card text-white hover:shadow-projectCard group rounded-md bg-[url('../images/project/project-four.png')] bg-cover bg-center p-4 duration-[0.4s] ease-in-out"
+            >
+              <div
+                class="project-info flex items-center justify-between opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+              >
+                <div class="project-bio relative left-2.5 top-40">
+                  <h3 class="text-[0.9rem]">Hajj Platform</h3>
+                  <p class="text-[0.83rem] font-light">Spring Boot, Angular</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://github.com/khiati-walid/Hajj-application"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/svg/github-icon.svg"
+                      alt="github logo"
+                      width="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div
+              href=""
+              class="card text-white hover:shadow-projectCard group rounded-md bg-[url('../images/project/project-five.png')] bg-cover bg-center p-4 duration-[0.4s] ease-in-out"
+            >
+              <div
+                class="project-info flex items-center justify-between opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+              >
+                <div class="project-bio relative left-2.5 top-40">
+                  <h3 class="text-[0.9rem]">Store API Application</h3>
+                  <p class="text-[0.83rem] font-light">NodeJs, Express</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://github.com/khiati-walid/node-express-Store-API"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/svg/github-icon.svg"
+                      alt="github logo"
+                      width="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div
+              href=""
+              class="card text-white hover:shadow-projectCard group rounded-md bg-[url('../images/project/project-six.png')] bg-cover bg-center p-4 duration-[0.4s] ease-in-out"
+            >
+              <div
+                class="project-info flex items-center justify-between opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100"
+              >
+                <div class="project-bio relative left-2.5 top-40">
+                  <h3 class="text-[0.9rem]">Achetou Shop DZ</h3>
+                  <p class="text-[0.83rem] font-light">Django</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <a
+                    href="https://github.com/khiati-walid/Achetou"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assets/images/svg/github-icon.svg"
+                      alt="github logo"
+                      width="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <a
+            href="https://github.com/khiati-walid"
+            class="btn btn-secondary bg-bgSecondary text-bgPrimary mx-auto mt-8 flex w-max items-center gap-3 rounded-[1.875rem] px-8 py-3 uppercase"
+            target="_blank"
+          >
+            <span>See More</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                height="16"
+                width="16"
+                stroke-width="3.5"
+                stroke="currentColor"
+              >
+                <title>right arrow svg</title>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                ></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+      <hr
+        class="border-cardBackground mx-4 my-24 border sm:max-w-[68.75rem] sm:mx-auto"
+      />
+      <!-- Contact -->
+      <section id="contact">
+        <div class="wrapper">
+          <div class="pb-10">
+            <h2
+              class="mb-4 text-[2.5rem] font-semibold leading-tight transition sm:text-5xl"
+            >
+              Contact Me
+            </h2>
+            <p class="font-light">
+              Feel free to reach out to me through any of the following
+              channels.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#111111] text-white">
+      <div class="wrapper min-h-40 p-4 text-center text-sm font-light">
+        <a href="mailto:career.walidkhiati@gmail.com" class="text-inherit"
+          >career.walidkhiati@gmail.com</a
+        >
+        <ul class="my-5 flex justify-center gap-4">
+          <li>
+            <a
+              href="mailto:career.walidkhiati@gmail.com"
+              target="_blank"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+            >
+              <img
+                src="./assets/images/svg/mail-icon.svg"
+                alt="Gmail"
+                width="20"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://t.me/Rairon7"
+              target="_blank"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+            >
+              <img
+                src="./assets/images/svg/telegram-icon.svg"
+                alt="Telegram"
+                width="20"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/_rairon"
+              target="_blank"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+            >
+              <img
+                src="./assets/images/svg/twitter-icon.svg"
+                alt="Twitter"
+                width="20"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/khiati-walid/"
+              target="_blank"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+            >
+              <img
+                src="./assets/images/svg/linkedin-icon.svg"
+                alt="Linkedin"
+                width="20"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/khiati-walid"
+              target="_blank"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800"
+            >
+              <img
+                src="./assets/images/svg/github-icon.svg"
+                alt="GitHub"
+                width="20"
+              />
+            </a>
+          </li>
+        </ul>
+        <p>Walid Khiati. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
